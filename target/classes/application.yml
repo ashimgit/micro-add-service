@@ -3,3 +3,16 @@ server :
    servlet:
       context-path: /micro-add-service
       
+spring:
+  application:
+    name: micro-add-service
+      
+eureka:
+   client:
+      registerWithEureka: true
+      fetchRegistry: true
+      serviceUrl:
+         #defaultZone: http://localhost:1234/eureka
+         defaultZone: http://localhost:1234/micro-eureka-service-discovery/eureka
+   instance:
+      hostname: localhost
