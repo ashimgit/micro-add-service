@@ -1,0 +1,5 @@
+server :
+   port: 12345
+   servlet:
+      context-path: /micro-add-service
+      
