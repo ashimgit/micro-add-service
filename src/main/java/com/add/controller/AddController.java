@@ -16,7 +16,7 @@ public class AddController {
 	@GetMapping(path="/do/{inputOne}/{inputTwo}")
 	public AddPojo getAddResult(@PathVariable("inputOne") final BigDecimal inputOne, @PathVariable("inputTwo") final BigDecimal inputTwo) {
 		System.out.println("From Path Variable inputOne = "+inputOne+" , inputTwo= "+inputTwo);
-		
+		//comment
 		
 		return new AddPojo(inputOne,inputTwo,"After Addition of "+inputOne+" And "+inputTwo+" , the result is = "+(inputOne.add(inputTwo)));
 	}
