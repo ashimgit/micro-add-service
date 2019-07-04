@@ -7,7 +7,9 @@ Docker :
 
 	i. Setup a network of type "bridge" :
 		==$docker network create mynet
+		
 	ii. List the network :
+	
 		==$docker network ls
 NETWORK ID          NAME                DRIVER              SCOPE
 e7347931de0b        bridge              bridge              local
